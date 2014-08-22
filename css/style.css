@@ -64,7 +64,6 @@
 		.icon > .label {
 			display: none;
 		}
-
 /* Wrapper */
 	@-moz-keyframes wrapper { 0% { opacity: 0; } 100% { opacity: 1; } }
 	@-webkit-keyframes wrapper { 0% { opacity: 0; } 100% { opacity: 1; } }
@@ -378,6 +377,13 @@
 					display: none;
 				}
 
+                #header > nav.mobile {
+					display: none;
+				}
+				
+				#header > nav.normal {
+					display: block;
+				}
 /* Footer */
 
 	#footer {
