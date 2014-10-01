@@ -9,7 +9,7 @@
 /* Basic */
 
 	body, input, select, textarea {
-		color: white;
+		color: #F8EBC5;
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 15pt;
 		font-weight: 300 !important;
@@ -18,7 +18,7 @@
 	}
 
 	body {
-		background: white;
+		background: #16265B;
 		overflow: hidden;
 	}
 
@@ -360,7 +360,7 @@
 
 					#header nav a:hover:before {
 						background-color: rgba(255, 255, 255, 0.175);
-						color: white;
+						color: #F8EBC5;
 					}
 
 				#header nav a:active {
@@ -370,7 +370,7 @@
 
 					#header nav a:active:before {
 						background-color: rgba(255, 255, 255, 0.35);
-						color: white;
+						color: #F8EBC5;
 					}
 
 				#header nav a span {
