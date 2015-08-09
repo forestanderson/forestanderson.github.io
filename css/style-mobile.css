@@ -47,11 +47,19 @@
 		#header nav a:active {
 			font-size: 1em;
 		}
-		
+
 		#header > nav.normal {
 					display: none;
 				}
-				
+
 		#header > nav.mobile {
+					display: block;
+				}
+
+		#header > p.normal {
+					display: none;
+				}
+
+		#header > p.mobile {
 					display: block;
 				}

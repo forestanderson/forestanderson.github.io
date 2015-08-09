@@ -377,11 +377,19 @@
 					display: none;
 				}
 
-                #header > nav.mobile {
+        #header > nav.mobile {
 					display: none;
 				}
-				
+
 				#header > nav.normal {
+					display: block;
+				}
+
+				#header > p.mobile {
+					display: none;
+				}
+
+				#header > p.normal {
 					display: block;
 				}
 /* Footer */
