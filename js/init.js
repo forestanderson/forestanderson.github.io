@@ -18,10 +18,13 @@
 	});
 
 	// Events (JS).
-		
-		// Remove "loading" class once the page has fully loaded.
+
+		// Remove "loading" class once the page has fully loaded and change background-color to hot pink when color=pink
 			window.onload = function() {
 				document.body.className = '';
+				var color = '${param.color}';
+		    if(color!='pink')
+		    document.body.style.background = '#FF1CAE';
 			}
 
 		// Prevent scrolling on touch.
