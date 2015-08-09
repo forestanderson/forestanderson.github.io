@@ -24,14 +24,6 @@
 				document.body.className = '';
 			}
 
-   // Change background-color to hot pink when color=pink
-
-		$(document).ready(function(){
-    if(location.search == "?color=pink"){
-    document.body.style.background = '#FF1CAE';
-    }});
-
-
 		// Prevent scrolling on touch.
 			window.ontouchmove = function() {
 				return false;
