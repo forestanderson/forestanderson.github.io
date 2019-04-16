@@ -35,18 +35,6 @@
 <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=cf6c0f54-2ef7-4717-9888-1ab90d03959a"> </script>
 <!-- End of forest Zendesk Widget script -->
 		
-<!--<script type="text/javascript">		
-window.zESettings = {
-  webWidget: {
-    chat: {
-      suppress: true
-    },
-    contactForm: {
-      suppress: true
-    }
-  }
-};
-</script>-->
 
 <script>
 if (document.location.href.indexOf('widget') === -1){
@@ -54,9 +42,9 @@ if (document.location.href.indexOf('widget') === -1){
 		zE.hide();
 	});
 }
-	
-/* Suppress other channels if at least one department is online */
-	
+</script>
+		
+<script type="text/javascript">		
 var ChatDepartments = zE('webWidget:get', 'chat:departments');
 
 for (var c in ChatDepartments) {
@@ -76,16 +64,16 @@ else {
   window.zESettings = {
     webWidget: {
       contactForm: {
-        suppress: true
+        suppress: false
       },
       helpCenter: {
-        suppress: true
+        suppress: false
       }
     }
   };
 }
 }
-</script>
+</script>		
 
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
