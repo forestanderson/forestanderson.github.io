@@ -54,6 +54,37 @@ if (document.location.href.indexOf('widget') === -1){
 		zE.hide();
 	});
 }
+	
+/* Suppress other channels if at least one department is online */
+	
+var ChatDepartments = zE('webWidget:get', 'chat:departments');
+
+for (var c in ChatDepartments) {
+if (ChatDepartments[c].status == "online") {
+  window.zESettings = {
+    webWidget: {
+      contactForm: {
+        suppress: true
+      },
+      helpCenter: {
+        suppress: true
+      }
+    }
+  };
+}
+else { 
+  window.zESettings = {
+    webWidget: {
+      contactForm: {
+        suppress: true
+      },
+      helpCenter: {
+        suppress: true
+      }
+    }
+  };
+}
+}
 </script>
 
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
