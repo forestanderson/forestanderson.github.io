@@ -49,8 +49,8 @@ var ChatDepartments = zE('webWidget:get', 'chat:departments');
 
 for (var c in ChatDepartments) {
 if (ChatDepartments[c].status == "online") {
-  window.zESettings = {
-    webWidget: {
+zE('webWidget', 'updateSettings', {
+  webWidget: {
       contactForm: {
         suppress: true
       },
@@ -58,11 +58,11 @@ if (ChatDepartments[c].status == "online") {
         suppress: true
       }
     }
-  };
+});
 }
 else { 
-  window.zESettings = {
-    webWidget: {
+zE('webWidget', 'updateSettings', {
+  webWidget: {
       contactForm: {
         suppress: false
       },
@@ -70,7 +70,7 @@ else {
         suppress: false
       }
     }
-  };
+});
 }
 }
 </script>		
