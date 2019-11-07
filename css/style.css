@@ -413,4 +413,5 @@
 
 	#Embed {
 	  cursor: move;
+		position: absolute;
 	}
