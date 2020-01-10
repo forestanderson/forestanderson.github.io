@@ -53,7 +53,20 @@
 </script>
 
 <script>
+function myFunction() {
+zE('webWidget', 'updateSettings', {
+    webWidget: {
+      chat: {
+        tags: ['proactive_chat'],
+      }
+    }
+  });
+}
+
+$('.fa-envelope-o').replaceWith('<a onclick="myFunction()" href="javascript:void(0);" class="icon fa-envelope-o"><span class="label">Email</span></a>');
+
 zE('webWidget', 'hide');
+
 if (window.location.href.indexOf("test") > -1){
 	zE('webWidget', 'show');
 }
