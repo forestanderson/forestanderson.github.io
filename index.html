@@ -53,8 +53,9 @@
 </script>
 
 <script>
-if (document.location.href.indexOf('widget') === -1){
-	zE('webWidget', 'hide');
+zE('webWidget', 'hide');
+if (window.location.href.indexOf("test") > -1){
+	zE('webWidget', 'show');
 }
 </script>
 
